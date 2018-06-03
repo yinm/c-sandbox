@@ -27,7 +27,7 @@ int main(void)
     num = 0b00001110;
     printf("%d\n", num);
 
-    result = num << 1;
+    result = num >> 1;
 
     printf("2進数:");
     printBi(result);
