@@ -24,7 +24,7 @@ int main(void)
 {
     char num, result;
 
-    num = 0b00001110;
+    num = 0b11110010;
     printf("%d\n", num);
 
     result = num >> 1;
