@@ -22,18 +22,12 @@ void printBi(char num)
 
 int main(void)
 {
-    int num;
-    int result;
+    char num, result;
 
-    num = 0b00000000;
-    result = ~num;
+    num = 0b00001110;
+    printf("%d\n", num);
 
-    printf("2進数:");
-    printBi(result);
-    printf("(10進数:%d)\n", result);
-
-    num = 0b00001111;
-    result = ~num;
+    result = num << 1;
 
     printf("2進数:");
     printBi(result);
