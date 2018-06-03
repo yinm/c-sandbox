@@ -2,7 +2,7 @@
 
 #include <stdio.h>
 
-void printBi(int num) 
+void printBi(int num)
 {
     int len = 4;
     int bit[8];
@@ -20,13 +20,13 @@ void printBi(int num)
     }
 }
 
-int main(void) 
+int main(void)
 {
     int num1, num2, result;
 
     num1 = 0b0101;
     num2 = 0b0011;
-    result = num1 & num2;
+    result = num1 | num2;
 
     printf("2進数:");
     printBi(result);
