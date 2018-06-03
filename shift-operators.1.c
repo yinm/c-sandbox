@@ -2,9 +2,9 @@
 
 #include <stdio.h>
 
-void printBi(int num)
+void printBi(char num)
 {
-    int len = 4;
+    int len = 8;
     int bit[8];
     int x;
 
@@ -22,11 +22,18 @@ void printBi(int num)
 
 int main(void)
 {
-    int num1, num2, result;
+    int num;
+    int result;
 
-    num1 = 0b0101;
-    num2 = 0b0011;
-    result = num1 ^ num2;
+    num = 0b00000000;
+    result = ~num;
+
+    printf("2進数:");
+    printBi(result);
+    printf("(10進数:%d)\n", result);
+
+    num = 0b00001111;
+    result = ~num;
 
     printf("2進数:");
     printBi(result);
