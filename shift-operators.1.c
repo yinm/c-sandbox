@@ -26,7 +26,7 @@ int main(void)
 
     num1 = 0b0101;
     num2 = 0b0011;
-    result = num1 | num2;
+    result = num1 ^ num2;
 
     printf("2進数:");
     printBi(result);
